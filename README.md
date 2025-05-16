@@ -1,2 +1,3 @@
 These projects were done in course Requirements Planning and Development and Object Oriented Programming w/C#. Currently Freshman at Davenport University.
-Last updated 2/25/2025
+I have uploaded my own personal projects followed online.
+Last updated 5/15/2025
