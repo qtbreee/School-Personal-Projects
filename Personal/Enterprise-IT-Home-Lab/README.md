@@ -69,11 +69,11 @@ I verified the new configuration with `ipconfig` and tested connectivity to the 
 
 The initial external name-resolution test failed because DC01 was pointing to itself before the DNS role had been installed. TCP connectivity confirmed that the server could reach the internet, allowing me to separate the DNS problem from the underlying network connection.
 
-![Updated IP configuration](updated-IP-Config.jng)
+![Updated IP configuration](updated-IP-Config.jpg)
 
-![Gateway connectivity test](Gateway-connectivity-test.png)
+![Gateway connectivity test](Gateway-connectivity-test.jpg)
 
-![TCP port 443 connectivity test](TCP-Connectivity-test.png)
+![TCP port 443 connectivity test](TCP-Connectivity-test.jpg)
 
 ## Phase 3: Active Directory Domain Services and DNS
 
