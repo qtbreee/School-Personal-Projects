@@ -102,7 +102,7 @@ In DNS Manager, I confirmed that the following forward lookup zones were created
 
 Active Directory depends on DNS so domain clients can locate services provided by the domain controller.
 
-![DNS forward lookup zones](screenshots/10-dns-zones.png)
+![DNS forward lookup zones](DNS-FOward-Lookup.png)
 
 I used `nslookup` to test resolution for the domain, the domain controller, and an external domain:
 
@@ -114,7 +114,7 @@ nslookup microsoft.com
 
 The tests confirmed that internal Active Directory records and external domain names could be resolved.
 
-![DNS resolution tests](screenshots/11-dns-resolution-tests.png)
+![DNS resolution tests](DNS-resolution-tests.jpg)
 
 ## Phase 4: Building the Organization
 
@@ -145,8 +145,6 @@ BTECHLAB.LOCAL
     └── Computers
 ```
 
-![Department and sub-OU structure](screenshots/12-organizational-units.png)
-
 ### Employee Onboarding and Account Support
 
 I created fictional employee accounts and placed them in the appropriate department OUs. I then practiced common account-management tasks that are regularly performed by help desk and system administration teams:
@@ -158,7 +156,7 @@ I created fictional employee accounts and placed them in the appropriate departm
 - Adding users to groups
 - Removing users from groups
 
-![Fictional employee accounts](screenshots/13-employee-accounts.png)
+![Fictional employee accounts](Employee-accounts.jpg)
 
 ## Skills Demonstrated
 
