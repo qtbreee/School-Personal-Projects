@@ -42,13 +42,13 @@ I created a virtual machine in VMware Workstation and installed Windows Server 2
 
 I renamed the Windows Server computer to `DC01`. The name identifies the server as the first domain controller in the lab and follows a simple organizational naming convention.
 
-![DC01 computer name verification](screenshots/02-dc01-computer-name.png)
+![DC01 computer name verification](DC01-Computer-Name-Change.png)
 
 ### Reviewing the Original Configuration
 
 Before making network changes, I reviewed the server's current configuration with `ipconfig`. VMware's DHCP service originally assigned the server's address automatically.
 
-![Original DHCP network configuration](screenshots/03-original-ip-configuration.png)
+![Original DHCP network configuration](OG-ipconfig.jpg)
 
 ### Assigning a Static IPv4 Address
 
