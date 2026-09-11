@@ -85,7 +85,7 @@ I also created a Directory Services Restore Mode password. DSRM provides a recov
 
 The DNS delegation warning was expected because this is a new internal lab domain without an existing parent DNS infrastructure.
 
-![AD DS installation and promotion](AD-ds-installation.jpg)
+![AD DS installation and promotion](Ad-ds-installation.jpg)
 
 ### Verifying Active Directory
 
