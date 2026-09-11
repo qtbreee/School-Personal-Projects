@@ -63,19 +63,17 @@ A domain controller needs a predictable address so clients can consistently loca
 
 DC01 points to itself for DNS because it also hosts the DNS service for the Active Directory domain.
 
-![Static IPv4 configuration](screenshots/04-static-ip-configuration.png)
-
 ### Connectivity Testing and Troubleshooting
 
 I verified the new configuration with `ipconfig` and tested connectivity to the VMware NAT gateway. I also used `Test-NetConnection` to test outbound connectivity over TCP port 443.
 
 The initial external name-resolution test failed because DC01 was pointing to itself before the DNS role had been installed. TCP connectivity confirmed that the server could reach the internet, allowing me to separate the DNS problem from the underlying network connection.
 
-![Updated IP configuration](screenshots/05-updated-ipconfig.png)
+![Updated IP configuration](updated-IP-Config.jng)
 
-![Gateway connectivity test](screenshots/06-gateway-test.png)
+![Gateway connectivity test](Gateway-connectivity-test.png)
 
-![TCP port 443 connectivity test](screenshots/07-internet-connectivity-test.png)
+![TCP port 443 connectivity test](TCP-Connectivity-test.png)
 
 ## Phase 3: Active Directory Domain Services and DNS
 
