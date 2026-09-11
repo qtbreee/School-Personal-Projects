@@ -19,40 +19,40 @@ The purpose of this lab is to develop practical experience with Windows Server a
 
 ## Current Progress
 
-### Completed
+## Step 1: Windows Server Installation
 
-- Installed VMware Workstation
-- Created a Windows Server 2022 virtual machine
-- Installed Windows Server 2022
-- Installed VMware Tools
-- Configured the virtual machine’s network connection
-- Confirmed external connectivity by successfully pinging `8.8.8.8`
-- Reviewed the server’s IP configuration
+I created a virtual machine in VMware Workstation and installed Windows Server 2022.
 
-### In Progress
+![Windows Server installation](server-installation.jpg)
 
-- Configuring a static IP address
-- Installing Active Directory Domain Services
-- Creating a domain controller
+## Step 2: VMware Tools
 
-### Planned
+I installed VMware Tools to improve the virtual machine’s performance and functionality.
 
+![VMware Tools installed](vmware-tools.jpg)
+
+## Step 3: Network Configuration
+
+I reviewed the server’s network settings and IP configuration.
+
+![Network settings](network-settings.jpg)
+
+![IP configuration](ip-configuration.jpg)
+
+## Step 4: Connectivity Testing
+
+I used the `ping 8.8.8.8` command to test external network connectivity. The successful responses confirmed that the server could communicate outside the local network.
+
+![Successful ping test](connectivity-test.jpg)
+
+## Next Steps
+
+- Configure a static IP address
+- Install Active Directory Domain Services
 - Configure DNS and DHCP
-- Create organizational units
-- Create users and security groups
-- Join a Windows client computer to the domain
+- Create users and groups
+- Join a Windows client to the domain
 - Configure Group Policy
-- Create shared folders and permissions
-- Practice password resets and account unlocks
-- Use PowerShell to automate user management
-- Document common troubleshooting scenarios
-
-## Skills Demonstrated
-
-- Virtual machine configuration
-- Windows Server installation
-- Basic network configuration
-- Connectivity testing
 - Technical troubleshooting
 - System documentation
 
