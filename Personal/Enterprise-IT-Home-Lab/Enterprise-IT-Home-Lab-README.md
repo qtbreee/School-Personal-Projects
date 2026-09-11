@@ -33,7 +33,8 @@ flowchart TD
 
 I created a virtual machine in VMware Workstation and installed Windows Server 2022. I also installed VMware Tools to improve the virtual machine's performance and its integration with the host computer.
 
-![VMware Tools shown in Programs and Features](screenshots/01-vmware-tools-installed.png)
+![Server Installation](Server-Installation.jpg)
+![VMware Tools shown in Programs and Features](01-vmware-tools-installed.png)
 
 ## Phase 2: Server Identity and Network Configuration
 
