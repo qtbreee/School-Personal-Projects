@@ -85,13 +85,13 @@ I also created a Directory Services Restore Mode password. DSRM provides a recov
 
 The DNS delegation warning was expected because this is a new internal lab domain without an existing parent DNS infrastructure.
 
-![AD DS installation and promotion](screenshots/08-ad-ds-installation.png)
+![AD DS installation and promotion](AD-ds-installation.jpg)
 
 ### Verifying Active Directory
 
 After the server restarted, I opened Active Directory Users and Computers and verified that DC01 appeared in the Domain Controllers organizational unit.
 
-![DC01 in Active Directory Users and Computers](screenshots/09-domain-controller-verification.png)
+![DC01 in Active Directory Users and Computers](Domain-Controller-Verification.jpg)
 
 ### Verifying DNS
 
@@ -102,7 +102,7 @@ In DNS Manager, I confirmed that the following forward lookup zones were created
 
 Active Directory depends on DNS so domain clients can locate services provided by the domain controller.
 
-![DNS forward lookup zones](DNS-FOward-Lookup.png)
+![DNS forward lookup zones](DNS-Forward-Lookup.png)
 
 I used `nslookup` to test resolution for the domain, the domain controller, and an external domain:
 
