@@ -23,7 +23,7 @@ The purpose of this lab is to develop practical experience with Windows Server a
 
 I created a virtual machine in VMware Workstation and installed Windows Server 2022.
 
-![Windows Server installation](server-installation.jpg)
+![Windows Server installation](Server-Installation.jpg)
 
 ## Step 2: VMware Tools
 
