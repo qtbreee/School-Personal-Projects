@@ -29,7 +29,7 @@ I created a virtual machine in VMware Workstation and installed Windows Server 2
 
 I installed VMware Tools to improve the virtual machine’s performance and functionality.
 
-![VMware Tools installed](vmware-tools.jpg)
+![VMware Tools installed](vmware-tools.png)
 
 ## Step 3: Network Configuration
 
