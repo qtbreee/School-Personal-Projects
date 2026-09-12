@@ -33,8 +33,8 @@ flowchart TD
 
 I created a virtual machine in VMware Workstation and installed Windows Server 2022. I also installed VMware Tools to improve the virtual machine's performance and its integration with the host computer.
 
-![Server Installation](Server-Installation.jpg)
-![VMware Tools shown in Programs and Features](vmware-tools.png)
+![Server Installation](Screenshots/Server-Installation.jpg)
+![VMware Tools shown in Programs and Features](Screenshots/vmware-tools.png)
 
 ## Phase 2: Server Identity and Network Configuration
 
@@ -42,13 +42,13 @@ I created a virtual machine in VMware Workstation and installed Windows Server 2
 
 I renamed the Windows Server computer to `DC01`. The name identifies the server as the first domain controller in the lab and follows a simple organizational naming convention.
 
-![DC01 computer name verification](DC01-Computer-Name-Change.png)
+![DC01 computer name verification](Screenshots/DC01-Computer-Name-Change.png)
 
 ### Reviewing the Original Configuration
 
 Before making network changes, I reviewed the server's current configuration with `ipconfig`. VMware's DHCP service originally assigned the server's address automatically.
 
-![Original DHCP network configuration](OG-ipconfig.jpg)
+![Original DHCP network configuration](Screenshots/OG-ipconfig.jpg)
 
 ### Assigning a Static IPv4 Address
 
@@ -69,11 +69,11 @@ I verified the new configuration with `ipconfig` and tested connectivity to the 
 
 The initial external name-resolution test failed because DC01 was pointing to itself before the DNS role had been installed. TCP connectivity confirmed that the server could reach the internet, allowing me to separate the DNS problem from the underlying network connection.
 
-![Updated IP configuration](updated-IP-Config.jpg)
+![Updated IP configuration](Screenshots/updated-IP-Config.jpg)
 
-![Gateway connectivity test](Gateway-connectivity-test.jpg)
+![Gateway connectivity test](Screenshots/Gateway-connectivity-test.jpg)
 
-![TCP port 443 connectivity test](TCP-Connectivity-test.jpg)
+![TCP port 443 connectivity test](Screenshots/TCP-Connectivity-test.jpg)
 
 ## Phase 3: Active Directory Domain Services and DNS
 
@@ -85,13 +85,13 @@ I also created a Directory Services Restore Mode password. DSRM provides a recov
 
 The DNS delegation warning was expected because this is a new internal lab domain without an existing parent DNS infrastructure.
 
-![AD DS installation and promotion](Screenshot/Ad-ds-installation.jpg)
+![AD DS installation and promotion](Screenshots/Ad-ds-installation.jpg)
 
 ### Verifying Active Directory
 
 After the server restarted, I opened Active Directory Users and Computers and verified that DC01 appeared in the Domain Controllers organizational unit.
 
-![DC01 in Active Directory Users and Computers](Domain-Controller-Verification.jpg)
+![DC01 in Active Directory Users and Computers](Screenshots/Domain-Controller-Verification.jpg)
 
 ### Verifying DNS
 
@@ -102,7 +102,7 @@ In DNS Manager, I confirmed that the following forward lookup zones were created
 
 Active Directory depends on DNS so domain clients can locate services provided by the domain controller.
 
-![DNS forward lookup zones](DNS-Forward-Lookup.png)
+![DNS forward lookup zones](Screenshots/DNS-Forward-Lookup.png)
 
 I used `nslookup` to test resolution for the domain, the domain controller, and an external domain:
 
@@ -114,7 +114,7 @@ nslookup microsoft.com
 
 The tests confirmed that internal Active Directory records and external domain names could be resolved.
 
-![DNS resolution tests](DNS-resolution-tests.jpg)
+![DNS resolution tests](Screenshots/DNS-resolution-tests.jpg)
 
 ## Phase 4: Building the Organization
 
@@ -156,7 +156,7 @@ I created fictional employee accounts and placed them in the appropriate departm
 - Adding users to groups
 - Removing users from groups
 
-![Fictional employee accounts](Employee-accounts.jpg)
+![Fictional employee accounts](Screenshots/Employee-accounts.jpg)
 
 ## Skills Demonstrated
 
